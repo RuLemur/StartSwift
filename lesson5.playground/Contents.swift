@@ -73,12 +73,12 @@ extension TrunkCar: CustomStringConvertible {
 
 func doSomeThings() {
     let bmw = SportCar(maxSpeed: 200)
-    print(bmw.description)
+    print(bmw)
     bmw.loadUpTrunk(freight: .bag)
     bmw.startEngine()
     
     let man = TrunkCar(payloadCapacity: 4000)
-    print(man.description)
+    print(man)
     man.loadUpTrunk(freight: .wood)
     man.startEngine()
 }
